@@ -3,15 +3,44 @@
 	<head>
 		<title>Home</title>
 		<style>
-			video {
-				width: 1360px;
-				border-radius: 20px;
+			table,
+			td,
+			th {
+				border: 1px solid lightgray;
+				border-collapse: collapse;
+			}
+			tfoot{
+				text-align: left;
 			}
 		</style>
 	</head>
 	<body>
-		<video controls autoplay loop src="/videos/Ocean.mp4">
-			Your browser does not support video format.
-		</video>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">Expense</th>
+				</tr>
+				<tr>
+					<th>Category</th>
+					<th>Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Marketing</td>
+					<td>100$</td>
+				</tr>
+				<tr>
+					<td>Accounting</td>
+					<td>300$</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total</th>
+					<th>400$</th>
+				</tr>
+			</tfoot>
+		</table>
 	</body>
 </html>
