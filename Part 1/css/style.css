@@ -1,26 +1,51 @@
-a[target]{
-    color:orange
-}
-
-a[href="https://google.com"]{
+/* #product + p ~ p{
     color:tomato
+} */
+
+/* #product ~ p{
+    color:tomato
+} */
+
+/* #product p{
+    color:tomato
+} */
+
+/* article #para{
+    color: tomato;
+} */
+
+article :first-child {
+	color: tomato;
+}
+article :first-of-type {
+	color: tomato;
+}
+ul li:nth-child(3n) {
+	color: red;
 }
 
-a[href*="google"]{
-    color: brown;
-    font-size: 100px;
+a:visited,
+a:link {
+	color: red;
 }
 
-/* Starts with */
-a[href^=http]{
-    color: steelblue;
+a:focus {
+	color: slategray;
 }
 
-/* Ends with */
-a[href$='.com']{
-    color: crimson;
+::selection {
+	color: pink;
 }
 
-a[href^=http][href*='.com']{
-    color: gold;
+p::first-letter {
+	font-size: xx-large;
+}
+
+p::first-line {
+	font-weight: bold;
+}
+
+p::before {
+	content: "....";
+	display: block;
 }
