@@ -1,51 +1,28 @@
-/* #product + p ~ p{
-    color:tomato
-} */
-
-/* #product ~ p{
-    color:tomato
-} */
-
-/* #product p{
-    color:tomato
-} */
-
-/* article #para{
-    color: tomato;
-} */
-
-article :first-child {
-	color: tomato;
-}
-article :first-of-type {
-	color: tomato;
-}
-ul li:nth-child(3n) {
-	color: red;
+.box{
+	border-top: 20px solid burlywood;
+	width: 50%;
+	height: 50vh;
+	background-color: tomato;
 }
 
-a:visited,
-a:link {
-	color: red;
+.box1{
+	width: 100px;
+	height: 50px;
+	background-color: crimson;
+	overflow:hidden;
 }
 
-a:focus {
-	color: slategray;
-}
+/* vh --> viewport height(it covers only the view area)
+50vh - Denotes 50% of view area */
 
-::selection {
-	color: pink;
-}
+/* Default font size = 16px */
+/* 10em --> 10 times the size of the parent font size
+Default font size is 10px -> 10* 16 = 160px */
 
-p::first-letter {
-	font-size: xx-large;
-}
+/* 10Rem --> 10 times the size of the root font size */
 
-p::first-line {
-	font-weight: bold;
-}
-
-p::before {
-	content: "....";
-	display: block;
+.b1{
+	width: 4rem;
+	height: 4rem;
+	background-color: dodgerblue;
 }
