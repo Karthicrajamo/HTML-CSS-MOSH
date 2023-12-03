@@ -1,22 +1,33 @@
-article {
-	border: 5px solid lightgrey;
+.boxes {
+	border: 2px solid lightgrey;
+	height: 100vh;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center; /* row -> Main */
+	align-items: center; /* cross */
+	flex-wrap: wrap;
+	align-content: center;
 }
 
-.avatar {
+.box {
+	/* flex-basis: 5rem; */
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: .5rem;
 	width: 10rem;
 	height: 10rem;
-	border-radius: 50%;
-	background-color: darkgoldenrod;
-	float: left;
-	margin: 0.5rem;
 }
 
-.tweek::after {
-	content: "";
-	display: block;
-	clear: both;
+.b1 {
+	background-color: dodgerblue;
+	/* align-self: flex-start; */
+	align-content: end;
 }
 
-.clear {
-	clear: left;
+.b2 {
+	background-color: rgb(80, 255, 115);
+}
+
+.b3 {
+	background-color: tomato;
 }
