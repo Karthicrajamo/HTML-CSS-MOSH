@@ -1,24 +1,22 @@
-.boxes {
-	border: 2px solid lightgrey;
+article {
+	border: 5px solid lightgrey;
 }
 
-.box {
+.avatar {
 	width: 10rem;
 	height: 10rem;
+	border-radius: 50%;
+	background-color: darkgoldenrod;
+	float: left;
+	margin: 0.5rem;
 }
 
-.b1 {
-	background-color: dodgerblue;
+.tweek::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
-.b2 {
-	background-color: rgb(80, 255, 115);
-	position: absolute;
-	right: 5rem;
-	top: 0rem;
-	z-index: 1;
-}
-
-.b3 {
-	background-color: tomato;
+.clear {
+	clear: left;
 }
