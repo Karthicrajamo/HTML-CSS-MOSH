@@ -1,28 +1,24 @@
-.box{
-	border-top: 20px solid burlywood;
-	width: 50%;
-	height: 50vh;
-	background-color: tomato;
+.boxes {
+	border: 2px solid lightgrey;
 }
 
-.box1{
-	width: 100px;
-	height: 50px;
-	background-color: crimson;
-	overflow:hidden;
+.box {
+	width: 10rem;
+	height: 10rem;
 }
 
-/* vh --> viewport height(it covers only the view area)
-50vh - Denotes 50% of view area */
-
-/* Default font size = 16px */
-/* 10em --> 10 times the size of the parent font size
-Default font size is 10px -> 10* 16 = 160px */
-
-/* 10Rem --> 10 times the size of the root font size */
-
-.b1{
-	width: 4rem;
-	height: 4rem;
+.b1 {
 	background-color: dodgerblue;
+}
+
+.b2 {
+	background-color: rgb(80, 255, 115);
+	position: absolute;
+	right: 5rem;
+	top: 0rem;
+	z-index: 1;
+}
+
+.b3 {
+	background-color: tomato;
 }
